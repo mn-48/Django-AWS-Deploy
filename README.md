@@ -501,4 +501,4 @@ Test Nginx
 sudo nginx -t
 ```
 
-[ctln: Belal Hossain]
+[c: Belal Hossain]
