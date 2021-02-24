@@ -505,10 +505,10 @@ sudo nginx -t
 
 
 # Create aws deployed site  Secure Site for free:
-
+```
 $```sudo apt install snapd```
 $```sudo snap install --classic certbot```
 $```sudo ln -s /snap/bin/certbot /user/bin/certbot```
 $```sudo certbot --nginx```
 $```2```
-
+```
