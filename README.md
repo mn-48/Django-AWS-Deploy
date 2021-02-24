@@ -38,15 +38,6 @@ Now, we have a new user account with regular account privileges. However, we may
 To avoid having to log out of our normal user and log back in as the root account, we can set up what is known as superuser or root privileges for our normal account. This will allow our normal user to run commands with administrative privileges by putting the word sudo before each command.
 
 
-
-# Create aws deployed site  Secure Site for free:
-
-$```sudo apt install snapd```
-$```sudo snap install --classic certbot```
-$```sudo ln -s /snap/bin/certbot /user/bin/certbot```
-$```sudo certbot --nginx```
-$```2```
-
 To add these privileges to our new user, we need to add the user to the sudo group. By default, on Ubuntu 20.04, users who are members of the sudo group are allowed to use the sudo command.
 
 As root, run this command to add your new user to the sudo group (substitute the highlighted username with your new user):
@@ -511,4 +502,13 @@ Test Nginx
 sudo nginx -t
 ```
 
-[c: Belal Hossain]
+
+
+# Create aws deployed site  Secure Site for free:
+
+$```sudo apt install snapd```
+$```sudo snap install --classic certbot```
+$```sudo ln -s /snap/bin/certbot /user/bin/certbot```
+$```sudo certbot --nginx```
+$```2```
+
