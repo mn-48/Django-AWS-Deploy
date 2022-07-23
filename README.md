@@ -173,6 +173,11 @@ If you are using **Python 3**, upgrade pip and install the package by typing:
 ```bash
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
+# for ubuntu 22.04
+sudo apt-get install python-is-python3
+# gs install
+sudo apt -y install ghostscript
+
 ```
 
 With `virtualenv` installed, we can start forming our project. Create and move into a directory where we can keep our project files:
