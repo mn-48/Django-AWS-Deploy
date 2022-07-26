@@ -201,6 +201,9 @@ With your virtual environment active, install Django, Gunicorn, and the psycopg2
 ```
 pip install django gunicorn psycopg2-binary
 ```
+```
+sudo apt install gunicorn
+```
 You should now have all of the software needed to start a Django project.
 
 
