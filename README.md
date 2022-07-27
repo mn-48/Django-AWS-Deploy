@@ -217,6 +217,11 @@ django-admin startproject core .
 
 Option-2: Clone an existing git repository:
 ```
+git config --global user.name "MdNazmul9"
+
+git config --global user.email "nazmul.cse.pust@gmail.com"
+```
+```
 git clone https://github.com/belal-bh/aws-django.git .
 ```
 
