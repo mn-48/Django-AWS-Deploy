@@ -468,7 +468,11 @@ server {
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/djuser/djprojectdir/djproject;
+        root /home/djuser/djprojectdir/glascutr_website;
+    }
+
+    location /media/ {
+        root /home/djuser/djprojectdir/glascutr_website;
     }
 
     location / {
