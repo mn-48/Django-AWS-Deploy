@@ -468,11 +468,11 @@ server {
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/djuser/djprojectdir/;
+        root /home/djuser/djprojectdir/djproject;
     }
 
     location /media/ {
-        root /home/djuser/djprojectdir/;
+        root /home/djuser/djprojectdir/djproject;
     }
 
     location / {
