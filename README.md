@@ -374,7 +374,9 @@ ExecStart=/home/ubuntu/djprojectdir/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          core.wsgi:application
+ExecStart=/home/ubuntu/djprojectdir/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
           --bind unix:/run/gunicorn.sock \
           core.asgi:application
 
