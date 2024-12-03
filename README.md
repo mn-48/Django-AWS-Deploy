@@ -387,6 +387,27 @@ WantedBy=multi-user.target
 
 ```
 
+# daphne channer 
+```
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/djprojectdir/djproject
+ExecStart=/home/ubuntu/djprojectdir/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          core.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+```
+
 With that, our systemd service file is complete. Save and close it now.
 
 We can now start and enable the Gunicorn socket. This will create the socket file at `/run/gunicorn.sock` now and at boot. When a connection is made to that socket, systemd will automatically start the `gunicorn.service` to handle it:
