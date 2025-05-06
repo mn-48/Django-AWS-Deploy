@@ -190,4 +190,10 @@ pm2 logs
 pm2 unstartup
 ```
 
-বলো ভাই, চাইলে আমি তোমার জন্য `deploy.sh` ফাইলও তৈরি করে দিতে পারি যাতে সব অটো হয়।
+### Vite deploy with pm2
+
+```
+npm install -g serve
+
+pm2 start serve --name "vite-app" -- -s dist -l 3020
+```
